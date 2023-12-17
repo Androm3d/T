@@ -1,4 +1,4 @@
-all: sorts.o sorst.class arrays.txt
+all: sorts.o sorts.class arrays.txt
 
 
 sorts.o: sorts.cpp
