@@ -1,247 +1,414 @@
 file opened
-medir tiempo individualmente? (y/n): 
-Execution time of Bubble Sort for array size 64: 3.2e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.9e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.4e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.3e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.2e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.3e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.3e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.1e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.3e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.1e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.3e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.3e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.3e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.2e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.2e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.2e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.2e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.2e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.1e-05 seconds
-Execution time of Bubble Sort for array size 64: 1.2e-05 seconds
-Execution time of Bubble Sort for array size 1024: 0.002823 seconds
-Execution time of Bubble Sort for array size 1024: 0.002785 seconds
-Execution time of Bubble Sort for array size 1024: 0.00261 seconds
-Execution time of Bubble Sort for array size 1024: 0.002606 seconds
-Execution time of Bubble Sort for array size 1024: 0.002407 seconds
-Execution time of Bubble Sort for array size 1024: 0.002406 seconds
-Execution time of Bubble Sort for array size 1024: 0.00238 seconds
-Execution time of Bubble Sort for array size 1024: 0.002365 seconds
-Execution time of Bubble Sort for array size 1024: 0.002444 seconds
-Execution time of Bubble Sort for array size 1024: 0.002357 seconds
-Execution time of Bubble Sort for array size 1024: 0.002402 seconds
-Execution time of Bubble Sort for array size 1024: 0.002389 seconds
-Execution time of Bubble Sort for array size 1024: 0.002362 seconds
-Execution time of Bubble Sort for array size 1024: 0.002378 seconds
-Execution time of Bubble Sort for array size 1024: 0.002384 seconds
-Execution time of Bubble Sort for array size 1024: 0.00237 seconds
-Execution time of Bubble Sort for array size 1024: 0.002398 seconds
-Execution time of Bubble Sort for array size 1024: 0.002426 seconds
-Execution time of Bubble Sort for array size 1024: 0.002397 seconds
-Execution time of Bubble Sort for array size 1024: 0.002398 seconds
-Execution time of Bubble Sort for array size 16384: 0.881323 seconds
-Execution time of Bubble Sort for array size 16384: 0.887795 seconds
-Execution time of Bubble Sort for array size 16384: 0.88065 seconds
-Execution time of Bubble Sort for array size 16384: 0.878365 seconds
-Execution time of Bubble Sort for array size 16384: 0.879176 seconds
-Execution time of Bubble Sort for array size 16384: 0.880163 seconds
-Execution time of Bubble Sort for array size 16384: 0.875248 seconds
-Execution time of Bubble Sort for array size 16384: 0.880158 seconds
-Execution time of Bubble Sort for array size 16384: 0.890841 seconds
-Execution time of Bubble Sort for array size 16384: 0.89162 seconds
-Execution time of Bubble Sort for array size 16384: 0.883619 seconds
-Execution time of Bubble Sort for array size 16384: 0.882916 seconds
-Execution time of Bubble Sort for array size 16384: 0.907698 seconds
-Execution time of Bubble Sort for array size 16384: 0.888506 seconds
-Execution time of Bubble Sort for array size 16384: 0.94137 seconds
-Execution time of Bubble Sort for array size 16384: 0.895525 seconds
-Execution time of Bubble Sort for array size 16384: 0.928436 seconds
-Execution time of Bubble Sort for array size 16384: 0.905477 seconds
-Execution time of Bubble Sort for array size 16384: 0.912266 seconds
-Execution time of Bubble Sort for array size 16384: 0.923347 seconds
-Execution time of Bubble Sort for 60 sorts of arrays of 3 sizes: 17.9439s
-Execution time of Insertion Sort for array size 64: 9e-06 seconds
-Execution time of Insertion Sort for array size 64: 1.1e-05 seconds
-Execution time of Insertion Sort for array size 64: 1e-05 seconds
-Execution time of Insertion Sort for array size 64: 6e-06 seconds
-Execution time of Insertion Sort for array size 64: 7e-06 seconds
-Execution time of Insertion Sort for array size 64: 7e-06 seconds
-Execution time of Insertion Sort for array size 64: 1.3e-05 seconds
-Execution time of Insertion Sort for array size 64: 9e-06 seconds
-Execution time of Insertion Sort for array size 64: 9e-06 seconds
-Execution time of Insertion Sort for array size 64: 6e-06 seconds
-Execution time of Insertion Sort for array size 64: 7e-06 seconds
-Execution time of Insertion Sort for array size 64: 7e-06 seconds
-Execution time of Insertion Sort for array size 64: 5e-06 seconds
-Execution time of Insertion Sort for array size 64: 7e-06 seconds
-Execution time of Insertion Sort for array size 64: 5e-06 seconds
-Execution time of Insertion Sort for array size 64: 6e-06 seconds
-Execution time of Insertion Sort for array size 64: 7e-06 seconds
-Execution time of Insertion Sort for array size 64: 9e-06 seconds
-Execution time of Insertion Sort for array size 64: 1.1e-05 seconds
-Execution time of Insertion Sort for array size 64: 6e-06 seconds
-Execution time of Insertion Sort for array size 1024: 0.001022 seconds
-Execution time of Insertion Sort for array size 1024: 0.001064 seconds
-Execution time of Insertion Sort for array size 1024: 0.001023 seconds
-Execution time of Insertion Sort for array size 1024: 0.000978 seconds
-Execution time of Insertion Sort for array size 1024: 0.001063 seconds
-Execution time of Insertion Sort for array size 1024: 0.001028 seconds
-Execution time of Insertion Sort for array size 1024: 0.000992 seconds
-Execution time of Insertion Sort for array size 1024: 0.000955 seconds
-Execution time of Insertion Sort for array size 1024: 0.000989 seconds
-Execution time of Insertion Sort for array size 1024: 0.001007 seconds
-Execution time of Insertion Sort for array size 1024: 0.001013 seconds
-Execution time of Insertion Sort for array size 1024: 0.000836 seconds
-Execution time of Insertion Sort for array size 1024: 0.000634 seconds
-Execution time of Insertion Sort for array size 1024: 0.000859 seconds
-Execution time of Insertion Sort for array size 1024: 0.000986 seconds
-Execution time of Insertion Sort for array size 1024: 0.000797 seconds
-Execution time of Insertion Sort for array size 1024: 0.000661 seconds
-Execution time of Insertion Sort for array size 1024: 0.000673 seconds
-Execution time of Insertion Sort for array size 1024: 0.000652 seconds
-Execution time of Insertion Sort for array size 1024: 0.000668 seconds
-Execution time of Insertion Sort for array size 16384: 0.166031 seconds
-Execution time of Insertion Sort for array size 16384: 0.170966 seconds
-Execution time of Insertion Sort for array size 16384: 0.177161 seconds
-Execution time of Insertion Sort for array size 16384: 0.176167 seconds
-Execution time of Insertion Sort for array size 16384: 0.200705 seconds
-Execution time of Insertion Sort for array size 16384: 0.174057 seconds
-Execution time of Insertion Sort for array size 16384: 0.190199 seconds
-Execution time of Insertion Sort for array size 16384: 0.190149 seconds
-Execution time of Insertion Sort for array size 16384: 0.192568 seconds
-Execution time of Insertion Sort for array size 16384: 0.218129 seconds
-Execution time of Insertion Sort for array size 16384: 0.205331 seconds
-Execution time of Insertion Sort for array size 16384: 0.201974 seconds
-Execution time of Insertion Sort for array size 16384: 0.190041 seconds
-Execution time of Insertion Sort for array size 16384: 0.178786 seconds
-Execution time of Insertion Sort for array size 16384: 0.208066 seconds
-Execution time of Insertion Sort for array size 16384: 0.169707 seconds
-Execution time of Insertion Sort for array size 16384: 0.172757 seconds
-Execution time of Insertion Sort for array size 16384: 0.172212 seconds
-Execution time of Insertion Sort for array size 16384: 0.167156 seconds
-Execution time of Insertion Sort for array size 16384: 0.163876 seconds
-Execution time of Insertion Sort for 60 sorts of arrays of 3 sizes: 3.70409s
-Execution time of Selection Sort for array size 64: 9e-06 seconds
-Execution time of Selection Sort for array size 64: 9e-06 seconds
-Execution time of Selection Sort for array size 64: 7e-06 seconds
-Execution time of Selection Sort for array size 64: 7e-06 seconds
-Execution time of Selection Sort for array size 64: 9e-06 seconds
-Execution time of Selection Sort for array size 64: 7e-06 seconds
-Execution time of Selection Sort for array size 64: 8e-06 seconds
-Execution time of Selection Sort for array size 64: 8e-06 seconds
-Execution time of Selection Sort for array size 64: 8e-06 seconds
-Execution time of Selection Sort for array size 64: 7e-06 seconds
-Execution time of Selection Sort for array size 64: 7e-06 seconds
-Execution time of Selection Sort for array size 64: 7e-06 seconds
-Execution time of Selection Sort for array size 64: 6e-06 seconds
-Execution time of Selection Sort for array size 64: 8e-06 seconds
-Execution time of Selection Sort for array size 64: 7e-06 seconds
-Execution time of Selection Sort for array size 64: 7e-06 seconds
-Execution time of Selection Sort for array size 64: 7e-06 seconds
-Execution time of Selection Sort for array size 64: 8e-06 seconds
-Execution time of Selection Sort for array size 64: 8e-06 seconds
-Execution time of Selection Sort for array size 64: 7e-06 seconds
-Execution time of Selection Sort for array size 1024: 0.001215 seconds
-Execution time of Selection Sort for array size 1024: 0.00126 seconds
-Execution time of Selection Sort for array size 1024: 0.001217 seconds
-Execution time of Selection Sort for array size 1024: 0.001214 seconds
-Execution time of Selection Sort for array size 1024: 0.001214 seconds
-Execution time of Selection Sort for array size 1024: 0.001213 seconds
-Execution time of Selection Sort for array size 1024: 0.001261 seconds
-Execution time of Selection Sort for array size 1024: 0.001232 seconds
-Execution time of Selection Sort for array size 1024: 0.001214 seconds
-Execution time of Selection Sort for array size 1024: 0.001213 seconds
-Execution time of Selection Sort for array size 1024: 0.001213 seconds
-Execution time of Selection Sort for array size 1024: 0.001212 seconds
-Execution time of Selection Sort for array size 1024: 0.001357 seconds
-Execution time of Selection Sort for array size 1024: 0.001227 seconds
-Execution time of Selection Sort for array size 1024: 0.001302 seconds
-Execution time of Selection Sort for array size 1024: 0.001249 seconds
-Execution time of Selection Sort for array size 1024: 0.001215 seconds
-Execution time of Selection Sort for array size 1024: 0.001215 seconds
-Execution time of Selection Sort for array size 1024: 0.001286 seconds
-Execution time of Selection Sort for array size 1024: 0.001324 seconds
-Execution time of Selection Sort for array size 16384: 0.318647 seconds
-Execution time of Selection Sort for array size 16384: 0.314636 seconds
-Execution time of Selection Sort for array size 16384: 0.305683 seconds
-Execution time of Selection Sort for array size 16384: 0.30415 seconds
-Execution time of Selection Sort for array size 16384: 0.304009 seconds
-Execution time of Selection Sort for array size 16384: 0.304926 seconds
-Execution time of Selection Sort for array size 16384: 0.305487 seconds
-Execution time of Selection Sort for array size 16384: 0.324397 seconds
-Execution time of Selection Sort for array size 16384: 0.310048 seconds
-Execution time of Selection Sort for array size 16384: 0.30754 seconds
-Execution time of Selection Sort for array size 16384: 0.3288 seconds
-Execution time of Selection Sort for array size 16384: 0.320633 seconds
-Execution time of Selection Sort for array size 16384: 0.335079 seconds
-Execution time of Selection Sort for array size 16384: 0.316356 seconds
-Execution time of Selection Sort for array size 16384: 0.311332 seconds
-Execution time of Selection Sort for array size 16384: 0.315922 seconds
-Execution time of Selection Sort for array size 16384: 0.305399 seconds
-Execution time of Selection Sort for array size 16384: 0.31362 seconds
-Execution time of Selection Sort for array size 16384: 0.308343 seconds
-Execution time of Selection Sort for array size 16384: 0.314612 seconds
-Execution time of Selection Sort for 60 sorts of arrays of 3 sizes: 6.29462s
-Execution time of Merge Sort for array size 64: 9e-06 seconds
-Execution time of Merge Sort for array size 64: 6e-06 seconds
-Execution time of Merge Sort for array size 64: 5e-06 seconds
-Execution time of Merge Sort for array size 64: 6e-06 seconds
-Execution time of Merge Sort for array size 64: 5e-06 seconds
-Execution time of Merge Sort for array size 64: 4e-06 seconds
-Execution time of Merge Sort for array size 64: 4e-06 seconds
-Execution time of Merge Sort for array size 64: 4e-06 seconds
-Execution time of Merge Sort for array size 64: 4e-06 seconds
-Execution time of Merge Sort for array size 64: 6e-06 seconds
-Execution time of Merge Sort for array size 64: 5e-06 seconds
-Execution time of Merge Sort for array size 64: 5e-06 seconds
-Execution time of Merge Sort for array size 64: 5e-06 seconds
-Execution time of Merge Sort for array size 64: 5e-06 seconds
-Execution time of Merge Sort for array size 64: 5e-06 seconds
-Execution time of Merge Sort for array size 64: 5e-06 seconds
-Execution time of Merge Sort for array size 64: 4e-06 seconds
-Execution time of Merge Sort for array size 64: 4e-06 seconds
-Execution time of Merge Sort for array size 64: 4e-06 seconds
-Execution time of Merge Sort for array size 64: 4e-06 seconds
-Execution time of Merge Sort for array size 1024: 0.000118 seconds
-Execution time of Merge Sort for array size 1024: 0.000112 seconds
-Execution time of Merge Sort for array size 1024: 0.000112 seconds
-Execution time of Merge Sort for array size 1024: 0.000112 seconds
-Execution time of Merge Sort for array size 1024: 0.000128 seconds
-Execution time of Merge Sort for array size 1024: 0.000109 seconds
-Execution time of Merge Sort for array size 1024: 0.000109 seconds
-Execution time of Merge Sort for array size 1024: 0.00011 seconds
-Execution time of Merge Sort for array size 1024: 0.000131 seconds
-Execution time of Merge Sort for array size 1024: 0.000115 seconds
-Execution time of Merge Sort for array size 1024: 0.000113 seconds
-Execution time of Merge Sort for array size 1024: 0.000135 seconds
-Execution time of Merge Sort for array size 1024: 0.000112 seconds
-Execution time of Merge Sort for array size 1024: 0.000111 seconds
-Execution time of Merge Sort for array size 1024: 0.00011 seconds
-Execution time of Merge Sort for array size 1024: 0.000111 seconds
-Execution time of Merge Sort for array size 1024: 0.000109 seconds
-Execution time of Merge Sort for array size 1024: 0.000109 seconds
-Execution time of Merge Sort for array size 1024: 0.00011 seconds
-Execution time of Merge Sort for array size 1024: 0.000109 seconds
-Execution time of Merge Sort for array size 16384: 0.002329 seconds
-Execution time of Merge Sort for array size 16384: 0.002155 seconds
-Execution time of Merge Sort for array size 16384: 0.002191 seconds
-Execution time of Merge Sort for array size 16384: 0.00228 seconds
-Execution time of Merge Sort for array size 16384: 0.002217 seconds
-Execution time of Merge Sort for array size 16384: 0.002262 seconds
-Execution time of Merge Sort for array size 16384: 0.002168 seconds
-Execution time of Merge Sort for array size 16384: 0.002273 seconds
-Execution time of Merge Sort for array size 16384: 0.002191 seconds
-Execution time of Merge Sort for array size 16384: 0.002169 seconds
-Execution time of Merge Sort for array size 16384: 0.002206 seconds
-Execution time of Merge Sort for array size 16384: 0.002212 seconds
-Execution time of Merge Sort for array size 16384: 0.002176 seconds
-Execution time of Merge Sort for array size 16384: 0.002153 seconds
-Execution time of Merge Sort for array size 16384: 0.002152 seconds
-Execution time of Merge Sort for array size 16384: 0.002324 seconds
-Execution time of Merge Sort for array size 16384: 0.002197 seconds
-Execution time of Merge Sort for array size 16384: 0.002145 seconds
-Execution time of Merge Sort for array size 16384: 0.002148 seconds
-Execution time of Merge Sort for array size 16384: 0.002136 seconds
-Execution time of Merge Sort for 60 sorts of arrays of 3 sizes: 0.046468s
+0.259
+0.255
+0.254
+0.257
+0.25
+0.248
+0.247
+0.254
+0.254
+0.256
+0.256
+0.249
+0.255
+0.25
+0.262
+0.254
+0.253
+0.261
+0.258
+0.253
+0.252
+0.247
+0.256
+0.256
+0.258
+0.258
+0.255
+0.257
+0.262
+0.258
+0.25
+0.25
+0.252
+0.258
+0.26
+0.258
+0.254
+0.25
+0.257
+0.273
+0.254
+0.249
+0.255
+0.251
+0.254
+0.26
+0.252
+0.251
+0.256
+0.255
+0.257
+0.253
+0.257
+0.254
+0.251
+0.258
+0.256
+0.249
+0.254
+0.247
+0.251
+0.255
+0.262
+0.252
+0.256
+0.282
+0.256
+0.248
+0.25
+0.257
+0.26
+0.254
+0.251
+0.251
+0.253
+0.264
+0.249
+0.248
+0.256
+0.257
+0.25
+0.257
+0.254
+0.255
+0.266
+0.253
+0.267
+0.279
+0.282
+0.265
+0.279
+0.266
+0.257
+0.253
+0.265
+0.258
+0.268
+0.251
+0.249
+0.252
+
+
+
+0.049
+0.048
+0.048
+0.049
+0.05
+0.048
+0.049
+0.049
+0.048
+0.049
+0.05
+0.051
+0.05
+0.052
+0.049
+0.05
+0.05
+0.049
+0.05
+0.05
+0.049
+0.05
+0.05
+0.048
+0.049
+0.049
+0.049
+0.048
+0.049
+0.049
+0.048
+0.049
+0.048
+0.051
+0.051
+0.051
+0.05
+0.048
+0.049
+0.049
+0.051
+0.05
+0.05
+0.05
+0.048
+0.05
+0.048
+0.049
+0.049
+0.048
+0.05
+0.049
+0.05
+0.05
+0.05
+0.05
+0.049
+0.048
+0.048
+0.049
+0.048
+0.05
+0.049
+0.051
+0.051
+0.049
+0.05
+0.049
+0.049
+0.05
+0.049
+0.05
+0.049
+0.05
+0.049
+0.048
+0.05
+0.049
+0.049
+0.049
+0.049
+0.049
+0.048
+0.049
+0.049
+0.05
+0.049
+0.049
+0.048
+0.049
+0.074
+0.052
+0.05
+0.048
+0.049
+0.049
+0.05
+0.048
+0.05
+0.049
+
+
+
+0.09
+0.09
+0.089
+0.09
+0.09
+0.091
+0.09
+0.09
+0.09
+0.091
+0.089
+0.089
+0.09
+0.09
+0.09
+0.089
+0.09
+0.091
+0.089
+0.089
+0.09
+0.092
+0.091
+0.091
+0.09
+0.089
+0.09
+0.089
+0.09
+0.089
+0.09
+0.09
+0.089
+0.091
+0.097
+0.094
+0.091
+0.092
+0.092
+0.091
+0.092
+0.09
+0.092
+0.091
+0.09
+0.09
+0.09
+0.089
+0.091
+0.094
+0.09
+0.094
+0.093
+0.092
+0.092
+0.092
+0.094
+0.094
+0.091
+0.091
+0.091
+0.089
+0.089
+0.09
+0.089
+0.089
+0.09
+0.092
+0.091
+0.089
+0.104
+0.097
+0.114
+0.092
+0.091
+0.097
+0.106
+0.094
+0.09
+0.091
+0.093
+0.09
+0.099
+0.094
+0.094
+0.089
+0.091
+0.089
+0.09
+0.096
+0.106
+0.097
+0.091
+0.091
+0.091
+0.09
+0.09
+0.091
+0.09
+0.09
+
+
+
+0.001
+0.001
+0.001
+0.001
+0.001
+0.002
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.002
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.002
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.002
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+0.001
+
+
+
 
