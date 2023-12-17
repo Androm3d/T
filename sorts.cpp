@@ -3,7 +3,19 @@
 #include <string>
 #include <ctime>
 
-#define ARRAY_SIZE 100
+#define ARRAY_SIZE_base 2
+
+struct {
+    const int small = 5;
+    const int medium = 9;
+    const int big = 13;
+} ARRAY_SIZE_shift;
+
+/*
+array petit -> 32 elements (2 ^6)
+array mitjà -> 1024 elements (2 ^10)
+array gran -> 131072 elements (2 ^14)
+*/
 
 using namespace std;
 
@@ -13,9 +25,9 @@ void Swap(int& a, int& b) {
     b = temp;
 }
 
-void bubbleSort(int arr[]) {
-    for (int i = 0; i < ARRAY_SIZE - 1; ++i) {
-        for (int j = 0; j < ARRAY_SIZE - i - 1; ++j) {
+void bubbleSort(int arr[], int size_shift) {
+    for (int i = 0; i < (ARRAY_SIZE_base << size_shift) - 1; ++i) {
+        for (int j = 0; j < (ARRAY_SIZE_base << size_shift) - i - 1; ++j) {
             // Swap if the element found is greater than the next element
             if (arr[j] > arr[j + 1]) {
                 Swap(arr[j], arr[j + 1]);
@@ -24,8 +36,8 @@ void bubbleSort(int arr[]) {
     }
 }
 
-void insertionSort(int arr[]) {
-    for (int i = 1; i < ARRAY_SIZE; ++i) {
+void insertionSort(int arr[], int size_shift) {
+    for (int i = 1; i < (ARRAY_SIZE_base << size_shift) - 1; ++i) {
         int key = arr[i];
         int j = i - 1;
 
@@ -39,11 +51,11 @@ void insertionSort(int arr[]) {
     }
 }
 
-void selectionSort(int arr[]) {
-    for (int i = 0; i < ARRAY_SIZE - 1; ++i) {
+void selectionSort(int arr[], int size_shift) {
+    for (int i = 0; i < (ARRAY_SIZE_base << size_shift) - 1; ++i) {
         // Find the minimum element in the unsorted part of the array
         int minIndex = i;
-        for (int j = i + 1; j < ARRAY_SIZE; ++j) {
+        for (int j = i + 1; j < (ARRAY_SIZE_base << size_shift); ++j) {
             if (arr[j] < arr[minIndex]) {
                 minIndex = j;
             }
@@ -142,42 +154,53 @@ int main() {
     // Read data from the file
     char c;
     int i = 0;
-    int arr[100];
+    int line = 0;
+    int shift;
     double total_time = 0;
     for (int j = 0; j < 4; ++j) {
         string s;
         while (inputFile >> c) {
+            if (line < 20) 
+                shift = ARRAY_SIZE_shift.small;
+            else if (line < 40) 
+                shift = ARRAY_SIZE_shift.medium;
+            else
+                shift = ARRAY_SIZE_shift.big;
+            int arr[ARRAY_SIZE_base << shift];
             if (c == ' ') ++i;
             else if (c == '\n') {
+                //increment line variable
+                ++line;
                 //time
                 clock_t start_time = clock();
                 //sort
                 if (j == 0) {
-                    bubbleSort(arr);
+                    bubbleSort(arr, shift);
                     s = "Bubble Sort";
                 }
                 else if (j == 1) {
-                    insertionSort(arr);
+                    insertionSort(arr, shift);
                     s = "Insertion Sort";
                 }
                 else if (j == 2) {
-                    selectionSort(arr);
+                    selectionSort(arr, shift);
                     s = "Selection Sort";
                 }
                 else {
-                    mergeSort(arr, 0, ARRAY_SIZE-1);
+                    mergeSort(arr, 0, (ARRAY_SIZE_base << shift) -1);
                     s = "Merge Sort";
                 }
                 clock_t end_time = clock();
                 double duration = (double)(end_time - start_time) / CLOCKS_PER_SEC;
                 total_time += duration;
-                if (print_individual_time) cout << "Execution time of " << s << ": " << duration << " seconds" << endl;
+                if (print_individual_time) cout << "Execution time of " << s << " for array size " << (ARRAY_SIZE_base << shift) << ": " << duration << " seconds" << endl;
                 i = 0;
             }
             else arr[i] = int(c);
         }
-        cout << "Execution time of " << s << " for 100 sorts of arrays of size " << ARRAY_SIZE << ": " << total_time << "s" << endl;
+        cout << "Execution time of " << s << " for 60 sorts of arrays of 3 sizes: " << total_time << "s" << endl;
         total_time = 0;
+        line = 0;
         inputFile.clear();
         inputFile.seekg(0, std::ios::beg);
     }
