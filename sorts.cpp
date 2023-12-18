@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <ctime>
+//#include <chrono>
 
 #define ARRAY_SIZE 10000
 
@@ -161,6 +162,7 @@ int main() {
             else if (c == '\n') {
                 //time
                 clock_t start_time = clock();
+                //auto start_time2 = chrono::high_resolution_clock::now();
                 //sort
                 if (j == 0) {
                     bubbleSort(arr, shift);
@@ -182,7 +184,12 @@ int main() {
                 double duration = (double)(end_time - start_time) / CLOCKS_PER_SEC;
                 total_time += duration;
                 //if (print_individual_time) cout << "Execution time of " << s << " for array size " << ARRAY_SIZE << ": " << duration << " seconds" << endl;
+                /*
+                auto end_time2 = chrono::high_resolution_clock::now();
+                double duration2 =  chrono::duration_cast<chrono::microseconds>(end_time2 - start_time2).count() / 1e6;*/
                 cout << duration << endl;
+                //cout << "ctime: " << duration << endl;
+                //cout << "chrono: " << duration2 << endl;
                 i = 0;
             }
             else arr[i] = int(c);

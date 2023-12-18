@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+//import java.time.Instant;
+//import java.time.Duration;
 
 public class sorts {
     static final int ARRAY_SIZE = 10000;
@@ -139,6 +141,7 @@ public class sorts {
                     } else if (c == '\n') {
                         //time
                         long startTime = System.nanoTime();
+                        //Instant start = Instant.now();
                         //sort
                         if (j == 0) {
                             bubbleSort(arr);
@@ -162,7 +165,10 @@ public class sorts {
                             ++count;
                         }
                         */
+                        //Instant end = Instant.now();
+                        //Duration duration2 = Duration.between(start, end);
                         System.out.println(duration);
+                        //System.out.println("instant: " + duration2);
                         ++count;
                         i = 0;
                     }
