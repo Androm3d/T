@@ -122,6 +122,13 @@ void mergeSort(int arr[], int left, int right) {
     }
 }
 
+/*
+void printarray(int arr[]) {
+    for (int i = 0; i < ARRAY_SIZE; ++i) cout << arr[i] << ' ';
+    cout << endl;
+}
+*/
+
 int main() {
     // De chatGPT
 
@@ -136,7 +143,7 @@ int main() {
         cerr << "Error opening file: " << filename << endl;
         return 1; // Return an error code
     }
-    cout << "file opened" << endl;
+    //cout << "file opened" << endl;
 
     inputFile >> noskipws;
 
@@ -154,52 +161,75 @@ int main() {
     int shift;
     int arr[ARRAY_SIZE];
     double total_time = 0;
-    for (int j = 0; j < 4; ++j) {
-        string s;
-        while (inputFile >> c) {
-            
-            if (c == ' ') ++i;
-            else if (c == '\n') {
-                //time
-                clock_t start_time = clock();
-                //auto start_time2 = chrono::high_resolution_clock::now();
-                //sort
-                if (j == 0) {
-                    bubbleSort(arr, shift);
-                    s = "Bubble Sort";
-                }
-                else if (j == 1) {
-                    insertionSort(arr, shift);
-                    s = "Insertion Sort";
-                }
-                else if (j == 2) {
-                    selectionSort(arr, shift);
-                    s = "Selection Sort";
-                }
-                else {
-                    mergeSort(arr, 0, ARRAY_SIZE -1);
-                    s = "Merge Sort";
-                }
-                clock_t end_time = clock();
-                double duration = (double)(end_time - start_time) / CLOCKS_PER_SEC;
-                total_time += duration;
-                //if (print_individual_time) cout << "Execution time of " << s << " for array size " << ARRAY_SIZE << ": " << duration << " seconds" << endl;
-                /*
-                auto end_time2 = chrono::high_resolution_clock::now();
-                double duration2 =  chrono::duration_cast<chrono::microseconds>(end_time2 - start_time2).count() / 1e6;*/
-                cout << duration << endl;
-                //cout << "ctime: " << duration << endl;
-                //cout << "chrono: " << duration2 << endl;
-                i = 0;
+    int line = 0;
+    bool firstdigit = true;
+    string s;
+    while (inputFile >> c) {
+        bool newline = c == '\n';
+        bool space = c == ' '; 
+        if (newline) {
+            ++line;
+            //time
+            clock_t start_time = clock();
+            //auto start_time2 = chrono::high_resolution_clock::now();
+            //sort
+            if (line < 100) {
+                if (line == 0) cout << endl << endl << endl;
+                bubbleSort(arr, shift);
+                s = "Bubble Sort";
             }
-            else arr[i] = int(c);
+            else if (line < 200) {
+                if (line == 100) cout << endl << endl << endl;
+                insertionSort(arr, shift);
+                s = "Insertion Sort";
+            }
+            else if (line < 300) {
+                if (line == 200) cout << endl << endl << endl;
+                selectionSort(arr, shift);
+                s = "Selection Sort";
+            }
+            else {
+                if (line == 300) cout << endl << endl << endl;
+                mergeSort(arr, 0, ARRAY_SIZE -1);
+                s = "Merge Sort";
+            }
+            clock_t end_time = clock();
+            double duration = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+            total_time += duration;
+            //if (print_individual_time) cout << "Execution time of " << s << " for array size " << ARRAY_SIZE << ": " << duration << " seconds" << endl;
+            /*
+            auto end_time2 = chrono::high_resolution_clock::now();
+            double duration2 =  chrono::duration_cast<chrono::microseconds>(end_time2 - start_time2).count() / 1e6;*/
+            
+            cout << duration << endl;
+            
+            //cout << "ctime: " << duration << endl;
+            //cout << "chrono: " << duration2 << endl;
+            //cout << s << endl << endl << endl << endl;
+            //printarray(arr);
+
+            i = 0;
         }
-        //cout << "Execution time of " << s << " for 60 sorts of arrays of sizes " << ARRAY_SIZE << ": " << total_time << "s" << endl;
-        cout << endl << endl << endl;
-        total_time = 0;
-        inputFile.clear();
-        inputFile.seekg(0, std::ios::beg);
+        else if (space) {
+            ++i;
+            firstdigit = true;
+        }
+        else {
+            if (firstdigit) {
+                arr[i] = int(c) - 48; //int retorna el valor en ASCII, 48 és '0' en ASCII
+                firstdigit = false;
+            }
+            else {
+                arr[i] *= 10;
+                arr[i] += int(c) - 48;
+            }
+        }   
     }
+    //cout << "Execution time of " << s << " for 60 sorts of arrays of sizes " << ARRAY_SIZE << ": " << total_time << "s" << endl;
+    cout << endl << endl << endl;
+    total_time = 0;
+    inputFile.clear();
+    inputFile.seekg(0, std::ios::beg);
     cout << endl;
 
     // Close the file when done

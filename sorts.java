@@ -128,61 +128,77 @@ public class sorts {
         int i = 0;
         int[] arr = new int[ARRAY_SIZE];
         double totalTime = 0;
-
-        for (int j = 0; j < 4; ++j) {
-            String s = null;
-            int count = 0;
-            try (BufferedReader inputFile = new BufferedReader(new FileReader(filename))) {
-                System.out.println("File opened");
-                while ((c = (char) inputFile.read()) != -1 && count < 100) {
-                    if (Character.isDigit(c)) { // Check if the character is a digit
-                        arr[i] = Integer.parseInt(String.valueOf(c));
-                        ++i;
-                    } else if (c == '\n') {
-                        //time
-                        long startTime = System.nanoTime();
-                        //Instant start = Instant.now();
-                        //sort
-                        if (j == 0) {
-                            bubbleSort(arr);
-                            s = "Bubble Sort";
-                        } else if (j == 1) {
-                            insertionSort(arr);
-                            s = "Insertion Sort";
-                        } else if (j == 2) {
-                            selectionSort(arr);
-                            s = "Selection Sort";
-                        } else {
-                            mergeSort(arr, 0, ARRAY_SIZE - 1);
-                            s = "Merge Sort";
-                        }
-                        long endTime = System.nanoTime();
-                        double duration = (endTime - startTime) / 1e9;
-                        totalTime += duration;
-                        /*
-                        if (printIndividualTime) {
-                            System.out.println("Execution time of " + s + ": " + duration + " seconds");
-                            ++count;
-                        }
-                        */
-                        //Instant end = Instant.now();
-                        //Duration duration2 = Duration.between(start, end);
-                        System.out.println(duration);
-                        //System.out.println("instant: " + duration2);
-                        ++count;
-                        i = 0;
+        int line = 0;
+        Boolean firstdigit = true; 
+        String s = null;
+        try (BufferedReader inputFile = new BufferedReader(new FileReader(filename))) {
+            System.out.println("File opened");
+            while ((c = (char) inputFile.read()) != -1 && line < 400) {
+                Boolean newline = c == '\n';
+                Boolean space = c == ' '; 
+                if (newline) {
+                    ++line;
+                    //time
+                    long startTime = System.nanoTime();
+                    //Instant start = Instant.now();
+                    //sort
+                    if (line < 100) {
+                        if (line == 0) System.out.println("\n\n");
+                        bubbleSort(arr);
+                        s = "Bubble Sort";
+                    } else if (line < 200) {
+                        if (line == 100) System.out.println("\n\n");
+                        insertionSort(arr);
+                        s = "Insertion Sort";
+                    } else if (line < 300) {
+                        if (line == 200) System.out.println("\n\n");
+                        selectionSort(arr);
+                        s = "Selection Sort";
+                    } else {
+                        if (line == 300) System.out.println("\n\n");
+                        mergeSort(arr, 0, ARRAY_SIZE - 1);
+                        s = "Merge Sort";
+                    }
+                    long endTime = System.nanoTime();
+                    double duration = (endTime - startTime) / 1e9;
+                    totalTime += duration;
+                    /*
+                    if (printIndividualTime) {
+                        System.out.println("Execution time of " + s + ": " + duration + " seconds");
+                        ++line;
+                    }
+                    */
+                    //Instant end = Instant.now();
+                    //Duration duration2 = Duration.between(start, end);
+                    System.out.println(duration);
+                    //System.out.println("instant: " + duration2);
+                    i = 0;
+                }
+                else if (space) { // Check if the character is a digit
+                    ++i;
+                    firstdigit = true;
+                }
+                else{
+                    if (firstdigit) {
+                        arr[i] = c; 
+                        firstdigit = false;
+                    }
+                    else {
+                        arr[i] *= 10;
+                        arr[i] += c;
                     }
                 }
-                //System.out.println("Execution time of " + s + " for 100 sorts of arrays of size " + ARRAY_SIZE +
-                        //": " + totalTime + "s");
-                System.out.println();
-                totalTime = 0;
             }
-            catch (IOException e) {
-            System.err.println("Error opening file: " + filename);
-            e.printStackTrace();
-            }
+            //System.out.println("Execution time of " + s + " for 100 sorts of arrays of size " + ARRAY_SIZE +
+                    //": " + totalTime + "s");
+            System.out.println();
+            totalTime = 0;
+        }
+        catch (IOException e) {
+        System.err.println("Error opening file: " + filename);
+        e.printStackTrace();
         }
     }
 }
+
 
