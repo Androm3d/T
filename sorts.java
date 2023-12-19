@@ -106,6 +106,13 @@ public class sorts {
         }
     }
 
+    /*
+    static void printarray(int[] arr) {
+        for (int i = 0; i < ARRAY_SIZE; ++i) System.out.printf("%d ", arr[i]);
+        System.out.println();
+    }
+    */
+
      public static void main(String[] args) {
         // Specify the file name
         String filename = "arrays.txt";
@@ -134,7 +141,7 @@ public class sorts {
         try (BufferedReader inputFile = new BufferedReader(new FileReader(filename))) {
             System.out.println("File opened");
             while ((c = (char) inputFile.read()) != -1 && line < 400) {
-                Boolean newline = c == '\n';
+                Boolean newline = c == '\n' || c == '\r';
                 Boolean space = c == ' '; 
                 if (newline) {
                     ++line;
@@ -143,7 +150,7 @@ public class sorts {
                     //Instant start = Instant.now();
                     //sort
                     if (line < 100) {
-                        if (line == 0) System.out.println("\n\n");
+                        if (line == 1) System.out.println("\n\n");
                         bubbleSort(arr);
                         s = "Bubble Sort";
                     } else if (line < 200) {
@@ -170,22 +177,26 @@ public class sorts {
                     */
                     //Instant end = Instant.now();
                     //Duration duration2 = Duration.between(start, end);
+
                     System.out.println(duration);
+                    
                     //System.out.println("instant: " + duration2);
+                    //printarray(arr);
+
                     i = 0;
                 }
                 else if (space) { // Check if the character is a digit
-                    ++i;
+                    if (i < ARRAY_SIZE - 1) ++i;
                     firstdigit = true;
                 }
                 else{
                     if (firstdigit) {
-                        arr[i] = c; 
+                        arr[i] = c - 48; 
                         firstdigit = false;
                     }
                     else {
                         arr[i] *= 10;
-                        arr[i] += c;
+                        arr[i] += c - 48;
                     }
                 }
             }

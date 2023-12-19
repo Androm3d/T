@@ -174,7 +174,7 @@ int main() {
             //auto start_time2 = chrono::high_resolution_clock::now();
             //sort
             if (line < 100) {
-                if (line == 0) cout << endl << endl << endl;
+                if (line == 1) cout << endl << endl << endl;
                 bubbleSort(arr, shift);
                 s = "Bubble Sort";
             }
