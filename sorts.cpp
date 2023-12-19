@@ -1,8 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <ctime>
-//#include <chrono>
+//#include <ctime>
+#include <chrono>
 
 #define ARRAY_SIZE 10000
 
@@ -170,8 +170,8 @@ int main() {
         if (newline) {
             ++line;
             //time
-            clock_t start_time = clock();
-            //auto start_time2 = chrono::high_resolution_clock::now();
+            //clock_t start_time = clock();
+            auto start_time = chrono::high_resolution_clock::now();
             //sort
             if (line < 100) {
                 if (line == 1) cout << endl << endl << endl;
@@ -193,13 +193,13 @@ int main() {
                 mergeSort(arr, 0, ARRAY_SIZE -1);
                 s = "Merge Sort";
             }
-            clock_t end_time = clock();
-            double duration = (double)(end_time - start_time) / CLOCKS_PER_SEC;
-            total_time += duration;
+            //clock_t end_time = clock();
+            //double duration = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+            //total_time += duration;
             //if (print_individual_time) cout << "Execution time of " << s << " for array size " << ARRAY_SIZE << ": " << duration << " seconds" << endl;
-            /*
-            auto end_time2 = chrono::high_resolution_clock::now();
-            double duration2 =  chrono::duration_cast<chrono::microseconds>(end_time2 - start_time2).count() / 1e6;*/
+
+            auto end_time = chrono::high_resolution_clock::now();
+            double duration =  chrono::duration_cast<chrono::microseconds>(end_time- start_time).count() / 1e6;
             
             cout << duration << endl;
             
